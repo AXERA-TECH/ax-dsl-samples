@@ -21,7 +21,7 @@ def mul_kernel(a, b, output):
 
 
 def run(a, b, output):
-    return mul_kernel[(1,), 1](a, b, output)
+    return mul_kernel[(1,)](a, b, output)
 
 
 def export_model(output_path):

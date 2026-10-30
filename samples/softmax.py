@@ -20,7 +20,7 @@ def softmax_kernel(x, output, dim):
 
 
 def run(x, output):
-    return softmax_kernel[(1,), 1](x, output, DIM)
+    return softmax_kernel[(1,)](x, output, DIM)
 
 
 def export_model(output_path):

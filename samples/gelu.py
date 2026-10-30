@@ -19,7 +19,7 @@ def gelu_kernel(x, output):
 
 
 def run(x, output):
-    return gelu_kernel[(1,), 1](x, output)
+    return gelu_kernel[(1,)](x, output)
 
 
 def export_model(output_path):
